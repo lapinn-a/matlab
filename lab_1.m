@@ -1,0 +1,12 @@
+a = 1.3;
+b = 2.42;
+i = 0.83;
+x = 1.5;
+k = 2;
+y = abs(a^2-b^2)/sin(k*x) + 10^4*(abs(cos(i)/sin(k*x)))^(1/5) - (k^2 + tan(3*k)) / exp(k*x)
+V = [a,b,i,x,k,y];
+vmax = max(V');
+N = ones(1,6);
+N(1) = vmax;
+sum0 = sum(N');
+N(6) = sum0
